@@ -2,16 +2,21 @@
 #include <time.h>
 #include <stdio.h>
 /**
-*main - entry poin
+*main - entry point
 *
 *Return: 0 means success else -1
 */
 int main(void)
 {
 	int n;
-    if 
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	
+	if (n % 10 > 5)
+		printf("last digit of %d is %d and is grater than 5\n", n, n % 10);
+	if (n % 10 == 0)
+		printf("last digit of %d is %d and is 0\n", n, n % 10);
+	if (n % 10 < 6 && n != 0)
+		printf("last digit of %d is %d and is less than 6 and not 0\n", n, n % 10);
 	return (0);
 }
