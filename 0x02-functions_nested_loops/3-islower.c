@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
+* _islower - check if a given value is a lower case alphabet
+* @c: value to check for
 *
-* int _islower(int c)
-* Return: 0 is a success
+* Return: 1 if value is lower else return 0
 */
 int _islower(int c)
 {
