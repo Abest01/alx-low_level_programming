@@ -1,16 +1,15 @@
 #include "main.h"
 
 /**
-* _isupper - entry value
-* @c: value to search for
-*
-* Return: 0 is a success else 1
-*/
+ * _isupper - checks for uppercase character
+ * @c: integer argument
+ * Return: 0 means Success else
+ */
 
 int _isupper(int c)
 {
-	if (c >= 65 && c <= 90)
+	if (c >= 'A' && c <= 'Z')
 		return (1);
-	return (0);
-
+	else
+		return (0);
 }

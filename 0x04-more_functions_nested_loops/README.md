@@ -1,1 +1,2 @@
-Diving in to c part 2
+#!/bin/bash
+More functions, more nested loops etc
