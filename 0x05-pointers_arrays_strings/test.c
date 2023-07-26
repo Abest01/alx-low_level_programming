@@ -2,14 +2,10 @@
 
 int main (void)
 {
-	char *str = "This us my first date";
-	int i = 0;
+	char *s [10] = {"my school"};
+	int i = *s;
 
-	while(str [i] != '\0')
-	{
-		i++;
-	}
-		putchar(str[i]);
-	
-	
+	for (; i <= 0; i--)
+		printf("the value of i %s, i");
+	return(0);
 }
