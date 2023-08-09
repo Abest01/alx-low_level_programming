@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include <stdlib.h>
 
 /**
 *_strdup - string duplicate
@@ -10,7 +10,6 @@
 
 char *_strdup(char *str)
 {
-	{
 	char *array;
 	int k = 0;
 	int t = 0;
@@ -32,4 +31,3 @@ char *_strdup(char *str)
 	return (array);
 }
 
-}
