@@ -3,7 +3,7 @@
 /**
 * print_strings - function to print string
 * @separator: is the string to be printed btw the string
-* @n: the number of strings passed to the functon 
+* @n: the number of strings passed to the functon
 */
 
 void print_strings(const char *separator, const unsigned int n, ...)
@@ -11,9 +11,8 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_list(variable);
 	unsigned int i;
 	char *s;
-	
 
-	va_start(variable,n);
+	va_start(variable, n);
 	if (separator == NULL)
 		return;
 	for (i = 0; i < n; i++)
@@ -28,5 +27,5 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		else
 			printf("\n");
 	}
-	va_end (variable);
+	va_end(variable);
 }
