@@ -26,4 +26,5 @@ int **alloc_grid(int width, int height)
 			newnode[i][j] = 0;
 	}
 	return (newnode);
+	free (newnode);
 }
