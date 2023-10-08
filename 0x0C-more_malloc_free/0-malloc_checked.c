@@ -12,7 +12,6 @@ void *malloc_checked(unsigned int b)
 
 	newnode = malloc(b);
 	if (!newnode)
-
-	exit(98);
+		exit(98);
 	return (newnode);
 }
