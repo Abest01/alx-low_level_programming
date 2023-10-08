@@ -11,15 +11,16 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	char *newnode;
 	unsigned int i, j = 0;
 
+	i = nmemb * size;
 	if (nmemb == 0 || size == 0)
-	for (i = 0; i < nmemb; i++)
 		return (NULL);
-	newnode = malloc(size * (i + 1));
+
+	newnode = malloc(i);
 	if (!newnode)
 		return (NULL);
 	while (j < i)
 	{
-		newnode[j] = nmemb;
+		newnode[j] = 0;
 		j++;
 		nmemb++;
 
