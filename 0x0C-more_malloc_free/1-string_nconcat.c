@@ -22,7 +22,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		;
 	for (j = 0; s2[j] != '\0'; j++)
 		;
-	if (n >= j)
+	if (n > j)
 		n = j;
 	k = i + j;
 
@@ -44,6 +44,5 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			}
 			l++;
 	}
-	newnode[l] = '\0';
 	return (newnode);
 }
