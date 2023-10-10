@@ -1,5 +1,4 @@
-#ifndef _YEAH_
-#define _YEAH_
+#ifndef PI
 #define pi 3.14159265359
 
 #endif
